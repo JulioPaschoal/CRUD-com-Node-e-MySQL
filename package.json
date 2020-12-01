@@ -1,0 +1,26 @@
+{
+  "name": "crud-com-node-e-mysql",
+  "version": "1.0.0",
+  "description": "Crud com mysql e nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulioPaschoal/CRUD-com-Node-e-MySQL.git"
+  },
+  "author": "Julio Paschoal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulioPaschoal/CRUD-com-Node-e-MySQL/issues"
+  },
+  "homepage": "https://github.com/JulioPaschoal/CRUD-com-Node-e-MySQL#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}

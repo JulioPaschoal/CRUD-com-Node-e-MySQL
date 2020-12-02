@@ -1,5 +1,4 @@
-const db = require('./db');
-
+const db = require('./db')
 
 const Pagamento = db.sequelize.define('pagamentos', {
     nome: {
@@ -8,9 +7,9 @@ const Pagamento = db.sequelize.define('pagamentos', {
     valor: {
         type: db.Sequelize.DOUBLE
     }
-});
+})
 
-//CRIAR A TABELA NO BANCO
-//Pagamento.sync({ force: true })
+//Criar a tabela
+//Pagamento.sync({force: true})
 
-module.exports = Pagamento;
+module.exports = Pagamento

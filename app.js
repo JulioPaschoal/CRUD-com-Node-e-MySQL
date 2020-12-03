@@ -97,6 +97,20 @@ app.post('/upadte-pagamento/:id', function (req, res) {
     })
 });
 
+//VIZUALIZAR DETALHES DO PAGAMENTO
+app.get('/vis-pagamento/:id', function (req, res) {
+    Pagamento.findByPk(req.params.id)
+        .then(post => {
+            res.render('vis-pagamento', {
+                id: req.params.id,
+                nome: post.nome,
+                valor: post.valor
+            })
+        })
+        .catch(function (erro) {
+            req.flash('error_msg', 'Erro: Pagamento não encontrado!')
+        })
+});
 
 //DELETAR UM PAGAMENTO
 app.get('/del-pagamento/:id', function (req, res) {
